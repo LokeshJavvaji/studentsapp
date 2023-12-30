@@ -1,3 +1,4 @@
+<?php include('./db_connect.php'); ?>
 <div class="col-md-6 col-lg-3">
                     <div class="box">
                         <div class="img-box">
