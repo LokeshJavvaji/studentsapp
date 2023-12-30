@@ -52,15 +52,15 @@
 
         <?php
         // ... Your PHP code for the first table ...$servername = "localhost";
-        $servername = "localhost"; $username = "root";
-        $password = "";
-        $dbname = "fullstack";
+      //  $servername = "localhost"; $username = "root";
+      //  $password = "";
+      //  $dbname = "fullstack";
 
-        $conn = new mysqli($servername, $username, $password, $dbname);
+       // $conn = new mysqli($servername, $username, $password, $dbname);
 
-        if ($conn->connect_error) {
+       // if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
-        }
+       // }
 
         $sql = "SELECT * FROM notes WHERE year = 1 ORDER BY sem,sub,unit";
 
