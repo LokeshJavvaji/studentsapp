@@ -1,4 +1,4 @@
-<?php include('./db_connect.php'); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,7 +49,7 @@
             <th>Unit</th>
             <th>NOTES</th>
         </tr>
-
+	<?php include './db_connect.php' ?>
         <?php
         // ... Your PHP code for the first table ...$servername = "localhost";
       //  $servername = "localhost"; $username = "root";
@@ -59,7 +59,7 @@
        // $conn = new mysqli($servername, $username, $password, $dbname);
 
        // if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
+         //   die("Connection failed: " . $conn->connect_error);
        // }
 
         $sql = "SELECT * FROM notes WHERE year = 1 ORDER BY sem,sub,unit";
@@ -80,7 +80,7 @@
             echo "<tr><td colspan='5'>0 results</td></tr>";
         }
 
-        $conn->close();
+        //$conn->close();
         ?>
     </table>
     
@@ -92,16 +92,16 @@
         </tr>
 
         <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "fullstack";
+        //$servername = "localhost";
+       // $username = "root";
+       // $password = "";
+       // $dbname = "fullstack";
 
-        $conn = new mysqli($servername, $username, $password, $dbname);
+       // $conn = new mysqli($servername, $username, $password, $dbname);
 
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
+       // if ($conn->connect_error) {
+       //     die("Connection failed: " . $conn->connect_error);
+       // }
 
         $sql = "SELECT * FROM syllabus WHERE year = 1 ";
 

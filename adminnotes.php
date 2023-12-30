@@ -319,16 +319,16 @@ html, body {
 </script>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "fullstack";
+//$servername = "localhost";
+//$username = "root";
+//$password = "";
+//$dbname = "fullstack";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+//$conn = new mysqli($servername, $username, $password, $dbname);
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+//if ($conn->connect_error) {
+//    die("Connection failed: " . $conn->connect_error);
+//}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $year = $_POST['year'];

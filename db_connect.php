@@ -1,3 +1,14 @@
-<?php 
+<?php
+$servername = "localhost"; 
+$username = "root";    
+$password = "";  
+$dbname = "fullstack";      
 
-$conn= new mysqli('localhost','root','','recruitment_db')or die("Could not connect to mysql".mysqli_error($con));
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
