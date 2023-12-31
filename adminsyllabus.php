@@ -1,4 +1,4 @@
-<?php include('./db_connect.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -205,6 +205,7 @@ html, body {
         </div>
     </div>
     </div>
+<?php include('./db_connect.php'); ?>
     <?php
 //$servername = "localhost";
 //$username = "root";

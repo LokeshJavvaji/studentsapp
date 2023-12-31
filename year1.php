@@ -80,7 +80,7 @@
             echo "<tr><td colspan='5'>0 results</td></tr>";
         }
 
-        //$conn->close();
+        $conn->close();
         ?>
     </table>
     
@@ -90,7 +90,7 @@
             
             <th>SYLLABUS</th>
         </tr>
-
+	<?php include('./db_connect.php'); ?>
         <?php
         //$servername = "localhost";
        // $username = "root";

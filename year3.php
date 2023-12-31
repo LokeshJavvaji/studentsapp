@@ -1,4 +1,4 @@
-<?php include('./db_connect.php'); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,7 +49,7 @@
             <th>Unit</th>
             <th>NOTES</th>
         </tr>
-
+	<?php include('./db_connect.php'); ?>
         <?php
         // ... Your PHP code for the first table ...$servername = "localhost";
        // $servername = "localhost"; $username = "root";
@@ -80,7 +80,7 @@
             echo "<tr><td colspan='5'>0 results</td></tr>";
         }
 
-        //$conn->close();
+        $conn->close();
         ?>
     </table>
     
@@ -90,7 +90,7 @@
             
             <th>SYLLABUS</th>
         </tr>
-
+	<?php include('./db_connect.php'); ?>
         <?php
         //$servername = "localhost";
        // $username = "root";
